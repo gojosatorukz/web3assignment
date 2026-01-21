@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход и Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="register-form">
+            <h2>Регистрация</h2>
+            <input type="email" id="reg-email" placeholder="Email">
+            <input type="password" id="reg-pass" placeholder="Пароль (мин 6 символов)">
+            <button onclick="register()">Зарегистрироваться</button>
+            <p>Уже есть аккаунт? <a href="#" onclick="showLogin()">Войти</a></p>
+        </div>
+
+        <div id="login-form" style="display: none;">
+            <h2>Вход</h2>
+            <input type="email" id="login-email" placeholder="Email">
+            <input type="password" id="login-pass" placeholder="Пароль">
+            <button onclick="login()">Войти</button>
+            <p>Нет аккаунта? <a href="#" onclick="showRegister()">Создать</a></p>
+        </div>
+
+        <div id="profile-view" style="display: none;">
+            <h2>Личный кабинет</h2>
+            <p>Добро пожаловать, <span id="user-email"></span>!</p>
+            <button onclick="logout()">Выйти</button>
+        </div>
+        
+        <p id="message" style="color: red;"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
