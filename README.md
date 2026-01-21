@@ -22,6 +22,7 @@ The project follows the **MVC (Model-View-Controller)** pattern to separate conc
 ├── .env            # Environment variables (DB credentials)
 ├── server.js       # Application entry point
 └── README.md       # Project documentation
+```
 🚀 Setup & Installation
 1. Prerequisites
 Ensure you have Node.js and PostgreSQL installed.
